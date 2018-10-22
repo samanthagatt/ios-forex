@@ -31,9 +31,13 @@ class SymbolsTableViewController: UITableViewController {
         if segue.identifier == "ShowDetail" {
             let detailVC = segue.destination as! ExchangeRateDetailViewController
             let indexPath = tableView.indexPathForSelectedRow!
+            let symbol = symbols[indexPath.row]
             detailVC.symbol = symbols[indexPath.row]
+            groupUserDefaults.set(symbol, forKey: "LastViewedSymbol")
         }
     }
+    
+     let groupUserDefaults = UserDefaults(suiteName: "group.com.SamanthaGatt.Forex")!
     
     private let symbols = ["BGN",
                            "CAD",

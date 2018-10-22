@@ -16,6 +16,8 @@ public class ExchangeRateFetcher {
         case invalidURL
     }
     
+    public init() {}
+    
     public func fetchCurrentExchangeRate(for symbol: String,
                                          base: String = "USD",
                                          completion: @escaping (ExchangeRate?, Error?) -> Void) {
