@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		223D9BC5217E308F00EC1B8E /* ForexCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BC4217E308800EC1B8E /* ForexCore.framework */; };
-		223D9BC6217E308F00EC1B8E /* ForexCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BC4217E308800EC1B8E /* ForexCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		223D9BD6217E359700EC1B8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BD5217E359700EC1B8E /* NotificationCenter.framework */; };
 		223D9BD9217E359700EC1B8E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D9BD8217E359700EC1B8E /* TodayViewController.swift */; };
 		223D9BDC217E359700EC1B8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223D9BDA217E359700EC1B8E /* MainInterface.storyboard */; };
 		223D9BE0217E359700EC1B8E /* ForexWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 223D9BD4217E359700EC1B8E /* ForexWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		223D9BF4217E51A600EC1B8E /* ForexCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BF3217E519600EC1B8E /* ForexCore.framework */; };
 		9D1EB744217D81FF00982AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB743217D81FF00982AFC /* AppDelegate.swift */; };
 		9D1EB749217D81FF00982AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB747217D81FF00982AFC /* Main.storyboard */; };
 		9D1EB74B217D820300982AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB74A217D820300982AFC /* Assets.xcassets */; };
@@ -22,20 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		223D9BC3217E308800EC1B8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 223D9BBF217E308700EC1B8E /* ForexCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 223D9BB1217E2F6400EC1B8E;
-			remoteInfo = ForexCore;
-		};
-		223D9BC7217E308F00EC1B8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 223D9BBF217E308700EC1B8E /* ForexCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 223D9BB0217E2F6400EC1B8E;
-			remoteInfo = ForexCore;
-		};
 		223D9BDE217E359700EC1B8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D1EB738217D81FF00982AFC /* Project object */;
@@ -43,20 +28,16 @@
 			remoteGlobalIDString = 223D9BD3217E359700EC1B8E;
 			remoteInfo = ForexWidget;
 		};
+		223D9BF2217E519600EC1B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223D9BEE217E519600EC1B8E /* ForexCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 223D9BB1217E2F6400EC1B8E;
+			remoteInfo = ForexCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		223D9BC9217E308F00EC1B8E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				223D9BC6217E308F00EC1B8E /* ForexCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		223D9BE4217E359800EC1B8E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,10 +49,19 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		223D9BED217E512800EC1B8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		223D9BBF217E308700EC1B8E /* ForexCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ForexCore.xcodeproj; path = Framework/ForexCore/ForexCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 		223D9BD4217E359700EC1B8E /* ForexWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ForexWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		223D9BD5217E359700EC1B8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		223D9BD8217E359700EC1B8E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +69,7 @@
 		223D9BDD217E359700EC1B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223D9BE5217E453800EC1B8E /* Forex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forex.entitlements; sourceTree = "<group>"; };
 		223D9BE6217E485000EC1B8E /* ForexWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForexWidget.entitlements; sourceTree = "<group>"; };
+		223D9BEE217E519600EC1B8E /* ForexCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ForexCore.xcodeproj; path = Framework/ForexCore/ForexCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9D1EB740217D81FF00982AFC /* Forex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1EB743217D81FF00982AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1EB748217D81FF00982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223D9BD6217E359700EC1B8E /* NotificationCenter.framework in Frameworks */,
+				223D9BF4217E51A600EC1B8E /* ForexCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223D9BC5217E308F00EC1B8E /* ForexCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,18 +103,10 @@
 		223D9BBC217E2FAB00EC1B8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				223D9BBF217E308700EC1B8E /* ForexCore.xcodeproj */,
+				223D9BEE217E519600EC1B8E /* ForexCore.xcodeproj */,
 				223D9BD5217E359700EC1B8E /* NotificationCenter.framework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		223D9BC0217E308700EC1B8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				223D9BC4217E308800EC1B8E /* ForexCore.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		223D9BD7217E359700EC1B8E /* ForexWidget */ = {
@@ -135,6 +118,14 @@
 				223D9BDD217E359700EC1B8E /* Info.plist */,
 			);
 			path = ForexWidget;
+			sourceTree = "<group>";
+		};
+		223D9BEF217E519600EC1B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				223D9BF3217E519600EC1B8E /* ForexCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9D1EB737217D81FF00982AFC = {
@@ -214,13 +205,12 @@
 				9D1EB73C217D81FF00982AFC /* Sources */,
 				9D1EB73D217D81FF00982AFC /* Frameworks */,
 				9D1EB73E217D81FF00982AFC /* Resources */,
-				223D9BC9217E308F00EC1B8E /* Embed Frameworks */,
 				223D9BE4217E359800EC1B8E /* Embed App Extensions */,
+				223D9BED217E512800EC1B8E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				223D9BC8217E308F00EC1B8E /* PBXTargetDependency */,
 				223D9BDF217E359700EC1B8E /* PBXTargetDependency */,
 			);
 			name = Forex;
@@ -269,8 +259,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 223D9BC0217E308700EC1B8E /* Products */;
-					ProjectRef = 223D9BBF217E308700EC1B8E /* ForexCore.xcodeproj */;
+					ProductGroup = 223D9BEF217E519600EC1B8E /* Products */;
+					ProjectRef = 223D9BEE217E519600EC1B8E /* ForexCore.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -282,11 +272,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		223D9BC4217E308800EC1B8E /* ForexCore.framework */ = {
+		223D9BF3217E519600EC1B8E /* ForexCore.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ForexCore.framework;
-			remoteRef = 223D9BC3217E308800EC1B8E /* PBXContainerItemProxy */;
+			remoteRef = 223D9BF2217E519600EC1B8E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -334,11 +324,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		223D9BC8217E308F00EC1B8E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ForexCore;
-			targetProxy = 223D9BC7217E308F00EC1B8E /* PBXContainerItemProxy */;
-		};
 		223D9BDF217E359700EC1B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 223D9BD3217E359700EC1B8E /* ForexWidget */;
